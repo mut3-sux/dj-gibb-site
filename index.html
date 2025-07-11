@@ -1,92 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DJ GIBB</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DJ Gibb</title>
   <style>
-    body {
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+    * {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #000;
-      color: #fff;
+      padding: 0;
+      box-sizing: border-box;
     }
-    header {
-      background-color: #111;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    header h1 {
-      font-size: 48px;
-      color: #e60000;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 20px;
-      color: #ccc;
-    }
-    .content {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-    .video, .mix {
-      margin-bottom: 40px;
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
-    }
-    .contact {
-      background-color: #111;
-      padding: 30px 20px;
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      background: url('image2.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
       text-align: center;
     }
-    .contact a {
-      color: #e60000;
+
+    .overlay {
+      background: rgba(0, 0, 0, 0.8);
+      min-height: 100vh;
+      padding: 4rem 1rem;
+    }
+
+    header img {
+      max-width: 180px;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #ff0000;
+      margin-bottom: 0.5rem;
+    }
+
+    p.tagline {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .links a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      background: #ff0000;
       text-decoration: none;
-      margin: 0 10px;
-      font-weight: bold;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background 0.3s;
     }
-    .footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 14px;
-      color: #666;
+
+    .links a:hover {
+      background: #cc0000;
+    }
+
+    .media iframe {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      .links a {
+        display: block;
+        margin: 0.5rem auto;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>DJ GIBB</h1>
-    <p>UKG / Garage / Club Sets</p>
-  </header>
+  <div class="overlay">
+    <header>
+      <img src="logo.png" alt="DJ Gibb Logo" />
+      <h1>DJ GIBB</h1>
+      <p class="tagline">🔥 Live Sets | Mixes | Edits 🔥</p>
+    </header>
 
-  <div class="content">
-    <div class="video">
-      <h2>Latest Video Set</h2>
+    <div class="links">
+      <a href="https://www.youtube.com/watch?v=6ow1IMmkBqg&t=48s&ab_channel=MuT3SnipZz" target="_blank">Latest Video</a>
+      <a href="https://soundcloud.com/dylan-327051481" target="_blank">SoundCloud</a>
+      <a href="https://distrokid.com/hyperfollow/lilkiller1/find-my-way-home-dj-gibb-edit" target="_blank">Latest Release</a>
+      <a href="https://www.snapchat.com/@dylan18sw" target="_blank">Snapchat</a>
+      <a href="https://www.tiktok.com/@dj_gibb" target="_blank">TikTok</a>
+      <a href="https://www.instagram.com/dylan18sw" target="_blank">Instagram</a>
+      <a href="https://linktr.ee/realDJGIBB" target="_blank">Linktree</a>
+    </div>
+
+    <div class="media">
       <iframe src="https://www.youtube.com/embed/6ow1IMmkBqg?start=48" allowfullscreen></iframe>
     </div>
-
-    <div class="mix">
-      <h2>Listen to My Latest Mix</h2>
-      <iframe src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2Frealdjgibb%2Fukg-garage-mix-june-2025%2F" frameborder="0"></iframe>
-    </div>
-  </div>
-
-  <div class="contact">
-    <h2>Connect & Support</h2>
-    <p>
-      <a href="mailto:your-email@example.com">Contact Me</a>
-      <a href="https://www.mixcloud.com/realdjgibb/" target="_blank">Mixcloud</a>
-      <a href="https://www.youtube.com/channel/UCfB7vq6A_yourchannel" target="_blank">YouTube</a>
-      <a href="#">Buy My Music</a>
-    </p>
-  </div>
-
-  <div class="footer">
-    &copy; 2025 DJ GIBB. All rights reserved.
   </div>
 </body>
 </html>
